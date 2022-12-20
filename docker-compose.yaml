@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  discordgpt:
+    image: discordgpt:latest
+    container_name: discordgpt
+    restart: always
+    volumes:
+      - ./.env:/usr/src/app/.env
